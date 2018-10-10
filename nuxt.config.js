@@ -1,8 +1,8 @@
-const pkg = require('./package')
+const pkg = require("./package");
 
 module.exports = {
   // mode: 'universal',
-  mode: 'spa',
+  mode: "spa",
 
   /*
   ** Headers of the page
@@ -10,22 +10,22 @@ module.exports = {
   head: {
     title: pkg.name,
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
+      { charset: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { hid: "description", name: "description", content: pkg.description }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
 
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: { color: "#fff" },
 
   /*
   ** Global CSS
   */
-  css: ['assets/style.scss'],
+  css: ["assets/style.scss"],
 
   /*
   ** Plugins to load before mounting the App
@@ -36,12 +36,13 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
-    '@nuxtjs/pwa',
+    "@nuxtjs/pwa",
     // Doc: https://github.com/nuxt-community/axios-module#usage
-    '@nuxtjs/axios',
+    "@nuxtjs/axios",
     // Doc: https://buefy.github.io/#/documentation
-    'nuxt-buefy',
-    '~/modules/typescript.js'
+    "nuxt-buefy",
+    "nuxt-netlify-cms",
+    "~/modules/typescript.js"
   ],
   /*
   ** Axios module configuration
@@ -61,7 +62,7 @@ module.exports = {
   },
 
   manifest: {
-    name: 'project-name',
-    lang: 'ja'
+    name: "project-name",
+    lang: "ja"
   }
-}
+};
