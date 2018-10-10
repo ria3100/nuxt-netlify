@@ -1,5 +1,7 @@
 # my-nuxt
 
+Nuxt + Netlify でブログを作りたい
+
 > My beautiful Nuxt.js project
 
 ## Build Setup
