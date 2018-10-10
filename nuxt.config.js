@@ -36,7 +36,7 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
-    "@nuxtjs/pwa",
+    // "@nuxtjs/pwa",
     // Doc: https://github.com/nuxt-community/axios-module#usage
     "@nuxtjs/axios",
     // Doc: https://buefy.github.io/#/documentation
